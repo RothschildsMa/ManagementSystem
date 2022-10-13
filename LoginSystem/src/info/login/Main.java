@@ -6,6 +6,7 @@ public class Main {
 		// TODO 自動生成されたメソッド・スタブ
 		
 		//new
+		//new2
 	}
 
 }
