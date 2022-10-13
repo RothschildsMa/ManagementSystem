@@ -16,12 +16,12 @@ import javax.swing.JTextField;
 public class LoginPage implements ActionListener{
 
 	JFrame frame = new JFrame();
-	JButton loginButton = new JButton("Login");
-	JButton resetButton = new JButton("Reset");
+	JButton loginButton = new JButton("ログイン");
+	JButton resetButton = new JButton("クリア");
 	JTextField userIDField = new JTextField();
 	JPasswordField userPasswordField = new JPasswordField();
-	JLabel userIDLabel = new JLabel("userID:");
-	JLabel userPasswordLabel = new JLabel("password:");
+	JLabel userIDLabel = new JLabel("ユーザID:");
+	JLabel userPasswordLabel = new JLabel("パスワード:");
 	JLabel messageLabel = new JLabel();
 	HashMap<String,String> logininfo = new HashMap<String,String>();
 	
@@ -32,8 +32,8 @@ public class LoginPage implements ActionListener{
 		userIDLabel.setBounds(50,100,75,25);
 		userPasswordLabel.setBounds(50,150,75,25);
 		
-		messageLabel.setBounds(125,250,250,35);
-		messageLabel.setFont(new Font(null,Font.ITALIC,25));
+		messageLabel.setBounds(10,250,2500,35);
+		messageLabel.setFont(new Font(null,Font.ITALIC,14));
 		
 		userIDField.setBounds(125,100,200,25);
 		userPasswordField.setBounds(125,150,200,25);
@@ -82,13 +82,13 @@ public class LoginPage implements ActionListener{
 				}
 				else {
 					messageLabel.setForeground(Color.red);
-					messageLabel.setText("Wrong password");
+					messageLabel.setText("パスワードが間違っています、再度入力しなおしてください。");
 				}
 
 			}
 			else {
 				messageLabel.setForeground(Color.red);
-				messageLabel.setText("username not found");
+				messageLabel.setText("ユーザIDが存在しません。");
 			}
 		}
 	}	
