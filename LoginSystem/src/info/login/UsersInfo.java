@@ -11,5 +11,11 @@ public class UsersInfo {
 		logininfo.put("佐藤","satou");
 		logininfo.put("花山","hanayama");
 	}
+	
+	 protected HashMap getLoginInfo(){
+		return logininfo;
+	}
+}
+
 
 }
