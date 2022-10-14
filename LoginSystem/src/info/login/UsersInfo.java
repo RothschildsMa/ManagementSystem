@@ -12,7 +12,7 @@ public class UsersInfo {
 		logininfo.put("hanayama","123456");
 	}
 	
-	 protected HashMap getLoginInfo(){
+	 protected HashMap<String,String> getLoginInfo(){
 		return logininfo;
 	}
 }
